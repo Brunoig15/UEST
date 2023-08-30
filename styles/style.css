@@ -1,0 +1,39 @@
+/*-----------------------------------------------------------------NAV-----------------------------------------------------------------*/
+
+header nav {
+    height: max-content;
+    padding-bottom: 0.5rem;
+    transition: ease-out 0.3s;
+  }
+  header nav > div {
+    padding-bottom: 0.5rem;
+  }
+  
+  .resto-palabra {
+    display: none;
+  }
+  .nombre {
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size: 150%;
+  
+    user-select: none;
+  }
+  .boton-nav {
+    border: none;
+    padding: 0;
+  }
+  .boton-nav:focus {
+    box-shadow: none;
+  }
+  .nav-link {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: 750ms;
+  }
+  .nav-link:hover {
+    text-decoration-color: white;
+  }
+  .logo img{
+    width: 6rem;
+  }
