@@ -1,3 +1,24 @@
+/*----------------------------------------------------------------Vars----------------------------------------------------------------*/
+
+:root {
+  --color-primario: #0055d4ff;
+}
+
+/*----------------------------------------------------------------Scroll----------------------------------------------------------------*/
+body::-webkit-scrollbar {
+  width: .3rem;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 3rem;       /* roundness of the scroll thumb */
+  border: 3px solid var(--color-primario);  /* creates padding around scroll thumb */
+}
+
+
 /*-----------------------------------------------------------------NAV-----------------------------------------------------------------*/
 
 header nav {
@@ -9,9 +30,6 @@ header nav {
     padding-bottom: 0.5rem;
   }
   
-  .resto-palabra {
-    display: none;
-  }
   .nombre {
     margin-left: 2rem;
     font-weight: bold;
@@ -36,4 +54,23 @@ header nav {
   }
   .logo img{
     width: 6rem;
+    margin-left: 3rem;
+  }
+  .bx-menu, .bx-menu-alt-left{
+    font-size: 4rem;
+  }
+  nav{
+    background-color: white;
+  }
+
+  /*Cuerpo*/
+  .introduccion-cont{
+    margin: 6rem 3rem 0  ;
+  }
+  .introduccion-cont h2{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: .3rem var(--color-primario) solid;
+    width: 15rem;
+    padding-bottom: 1rem;
   }
