@@ -2,75 +2,217 @@
 
 :root {
   --color-primario: #0055d4ff;
+  --color-oscuro: #00112bff;
+  --color-grisclaro:#dbdee3ff;
 }
 
 /*----------------------------------------------------------------Scroll----------------------------------------------------------------*/
 body::-webkit-scrollbar {
-  width: .3rem;               /* width of the entire scrollbar */
+  width: 0.3rem; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: transparent;        /* color of the tracking area */
+  background: transparent; /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  border-radius: 3rem;       /* roundness of the scroll thumb */
-  border: 3px solid var(--color-primario);  /* creates padding around scroll thumb */
+  border-radius: 3rem; /* roundness of the scroll thumb */
+  border: 3px solid var(--color-primario); /* creates padding around scroll thumb */
 }
-
 
 /*-----------------------------------------------------------------NAV-----------------------------------------------------------------*/
 
 header nav {
-    height: max-content;
-    padding-bottom: 0.5rem;
-    transition: ease-out 0.3s;
+  height: max-content;
+  padding-bottom: 0.5rem;
+  transition: ease-out 0.3s;
+}
+header nav > div {
+  padding-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.boton-nav {
+  border: none;
+  padding: 0;
+}
+.boton-nav:focus {
+  box-shadow: none;
+}
+.nav-link {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 750ms;
+}
+.nav-link:hover {
+  text-decoration-color: white;
+}
+.logo img {
+  width: 6rem;
+  margin-left: 3rem;
+}
+.bx-menu,
+.bx-menu-alt-left {
+  font-size: 4rem;
+}
+nav {
+  background-color: white;
+  font-size: 1.5rem
+}
+/*
+/*Clases comunes*/
+.contenedor {
+  margin: 6rem 14rem 0;
+  font-family: "Roboto", sans-serif;
+}
+.contenedor h2 {
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  border-bottom: 0.3rem var(--color-primario) solid;
+  width: 17rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+.contenedor p {
+  font-size: 1.3rem;
+}
+/*----------------------------------------------------------------Hero----------------------------------------------------------------*/
+.hero img {
+  width: 100%;
+
+}
+.hero-titulo {
+  margin: 8rem 0 0 10rem;
+  position: absolute;
+  font-weight: bold;
+}
+.hero-titulo h1 {
+  font-size: 17em;
+  color: var(--color-oscuro);
+
+}
+.hero-titulo span {
+  margin-left: 5rem;
+  font-size: 2em;
+  color: var(--color-primario);
+}
+/*Quienes somos*/
+
+.cargos-tabla table{
+  width: 100%;
+  background-color: aliceblue;
+  margin: 1rem auto 5rem;
+  border-radius: 1rem;
+}
+
+.cargos-tabla th {
+  font-size: 150%;
+  padding: 1rem;
+  border-bottom: 0.1rem var(--color-primario) solid;
+}
+.cargos-tabla td {
+  font-size: 120%;
+  padding: 1rem;
+}
+
+/*Propuestas*/
+
+#lista2 {
+  counter-reset: li;
+  list-style: none;
+}
+
+#lista2 li {
+  position: relative;
+  display: block;
+  padding: 0.4em 0.4em 0.4em 2em;
+  margin: 0.5em 0;
+  background: rgb(182, 182, 182);
+  color: white;
+  border-radius: 0.3em;
+  transition: all 0.3s ease-out;
+}
+
+#lista2 li:hover {
+  background: #707070;
+}
+#lista2 li:hover:before {
+  transform: rotate(360deg);
+}
+
+#lista2 li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #003380ff;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: 0.3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all 0.3s ease-out;
+}
+
+/*------------------------------------------------------------Media Query-------------------------------------------------------------*/
+@media (max-width: 1024px) {
+  .hero-titulo h1 {
+    font-size: 10rem;
   }
-  header nav > div {
-    padding-bottom: 0.5rem;
-  }
-  
-  .nombre {
-    margin-left: 2rem;
-    font-weight: bold;
-    font-size: 150%;
-  
-    user-select: none;
-  }
-  .boton-nav {
-    border: none;
-    padding: 0;
-  }
-  .boton-nav:focus {
-    box-shadow: none;
-  }
-  .nav-link {
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: 750ms;
-  }
-  .nav-link:hover {
-    text-decoration-color: white;
-  }
-  .logo img{
-    width: 6rem;
+  .hero-titulo span {
     margin-left: 3rem;
+    font-size: 1.5rem;
   }
-  .bx-menu, .bx-menu-alt-left{
-    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  /*Contenedor*/
+  .contenedor {
+    margin: 2rem 3rem 0;
   }
-  nav{
-    background-color: white;
+  .contenedor h2 {
+    margin-left: 0rem;
+    width: 14rem;
   }
 
-  /*Cuerpo*/
-  .introduccion-cont{
-    margin: 6rem 3rem 0  ;
+
+  /*Hero*/
+  .hero{
+    background-color:var(--color-grisclaro);
   }
-  .introduccion-cont h2{
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: .3rem var(--color-primario) solid;
-    width: 15rem;
-    padding-bottom: 1rem;
+  .hero-titulo {
+    margin:5rem 0 0 .5rem;
+    position: relative;
   }
+  .hero-titulo h1 {
+    font-size: 5rem;
+  }
+  .hero-titulo span {
+    margin-left: 3rem;
+    font-size: 1rem;
+  }
+  
+  /*Cargos*/
+  .cargos-tabla{
+    margin: 0;
+  }
+  .cargos-tabla h2{
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  /*Hero*/
+  .hero-titulo h1 {
+    font-size:4rem;
+  }
+  .hero-titulo span {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+}
+

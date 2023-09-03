@@ -18,6 +18,6 @@ window.onscroll = () => {
   scroll = window.scrollY;
   ancho = document.documentElement.clientWidth;
   scroll > 100 && ancho > 768
-    ? (nav.style.borderBottom = ".2rem var(--color-primario) solid")
-    : (nav.style.borderBottom = "none");
+    ? (nav.style.borderBottom = ".2rem var(--color-primario) solid", nav.style.background = "white")
+    : (nav.style.borderBottom = "none", nav.style.background = "white");
 };
