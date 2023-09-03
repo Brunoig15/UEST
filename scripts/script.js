@@ -21,3 +21,28 @@ window.onscroll = () => {
     ? (nav.style.borderBottom = ".2rem var(--color-primario) solid", nav.style.background = "white")
     : (nav.style.borderBottom = "none", nav.style.background = "white");
 };
+
+
+//Transiciones
+window.sr = ScrollReveal();
+
+//Hero
+//subtitulo
+sr.reveal('.subtitulo-hero', {
+    duration:3000,
+    origin: 'left',
+    opacity: 0.1,
+    
+});
+
+
+//Contenedor
+//H2
+sr.reveal('.contenedor h2', {
+  duration: 1000,
+  opacity: 0.1,
+  scale: 0.5,
+  origin: "left",
+  reset:true
+});
+

@@ -3,7 +3,7 @@
 :root {
   --color-primario: #0055d4ff;
   --color-oscuro: #00112bff;
-  --color-grisclaro:#dbdee3ff;
+  --color-grisclaro:rgb(243, 243, 243);
 }
 
 /*----------------------------------------------------------------Scroll----------------------------------------------------------------*/
@@ -169,13 +169,16 @@ footer div{
 }
 footer h2{
   border-bottom: 0.1rem var(--color-grisclaro) solid;
-  width: 17rem;
+  width: 12rem;
   color: var(--color-grisclaro);
 }
 footer .bx{
   margin: 1rem 3rem 0 0;
 
   color: white;
+}
+footer span{
+  font-family: "Roboto", sans-serif;
 }
 
 /*------------------------------------------------------------Media Query-------------------------------------------------------------*/
