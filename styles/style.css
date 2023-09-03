@@ -158,21 +158,21 @@ nav {
   transition: all 0.3s ease-out;
 }
 /*Footer*/
-.footer{
+footer{
   font-family: "Roboto", sans-serif;
   background-color: var(--color-oscuro);
   height: max-content;
   padding: 3rem;
 }
-.footer div{
+footer div{
   margin: auto;
 }
-.footer h2{
+footer h2{
   border-bottom: 0.1rem var(--color-grisclaro) solid;
   width: 17rem;
   color: var(--color-grisclaro);
 }
-.footer .bx{
+footer .bx{
   margin: 1rem 3rem 0 0;
 
   color: white;
