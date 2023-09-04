@@ -10,32 +10,10 @@ boton.addEventListener("click", (e) => {
       (activo = true));
 });
 
-//Scroll nav
-console.log();
-
-window.onscroll = () => {
-  const nav = document.querySelector(".navbar");
-  scroll = window.scrollY;
-  ancho = document.documentElement.clientWidth;
-  scroll > 100 && ancho > 768
-    ? (nav.style.background = "white")
-    : (nav.style.background = "white");
-};
-
 //Transiciones
 window.sr = ScrollReveal();
 
-//Hero
-//subtitulo
-sr.reveal('.subtitulo-hero', {
-    duration:3000,
-    origin: 'left',
-    opacity: 0.1,
-    
-});
-
-
-//Contenedor
+//Propuestas
 //H2
 sr.reveal('.contenedor h2', {
   duration: 2000,

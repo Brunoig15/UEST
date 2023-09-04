@@ -11,7 +11,7 @@ boton.addEventListener("click", (e) => {
 });
 
 //Scroll nav
-console.log();
+console.log("sada");
 
 window.onscroll = () => {
   const nav = document.querySelector(".navbar");
@@ -25,17 +25,8 @@ window.onscroll = () => {
 //Transiciones
 window.sr = ScrollReveal();
 
-//Hero
-//subtitulo
-sr.reveal('.subtitulo-hero', {
-    duration:3000,
-    origin: 'left',
-    opacity: 0.1,
-    
-});
 
-
-//Contenedor
+//Propuestas
 //H2
 sr.reveal('.contenedor h2', {
   duration: 2000,

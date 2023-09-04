@@ -79,7 +79,7 @@ nav {
 /*----------------------------------------------------------------Hero----------------------------------------------------------------*/
 .hero img {
   width: 100%;
-
+  
 }
 .hero-titulo {
   margin: 8rem 0 0 10rem;
@@ -204,11 +204,16 @@ footer h2{
 }
 footer .bx{
   margin: 1rem 3rem 0 0;
-
+  font-size: 2rem;
   color: white;
+  display: flex;
+  align-items: center;
+  
 }
 footer span{
   font-family: "Roboto", sans-serif;
+  font-size: 70%;
+  
 }
 
 /*------------------------------------------------------------Media Query-------------------------------------------------------------*/
@@ -272,7 +277,7 @@ footer span{
     margin: 1rem .5rem;
   }
   #aclaracion{
-    width: 90%;
+    width: 100%;
   }
 }
 
