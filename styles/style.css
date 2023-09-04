@@ -117,37 +117,39 @@ nav {
 
 /*Propuestas*/
 
-#lista2 {
+
+.lista {
   counter-reset: li;
   list-style: none;
 }
 
-#lista2 li {
+.lista li {
   position: relative;
   display: block;
   padding: 0.4em 0.4em 0.4em 2em;
   margin: 0.5em 0;
-  background: rgb(182, 182, 182);
+  background: rgb(202, 202, 202);
   color: white;
   border-radius: 0.3em;
   transition: all 0.3s ease-out;
 }
 
-#lista2 li:hover {
+.lista li:hover {
   background: #707070;
 }
-#lista2 li:hover:before {
+.lista li:hover:before {
   transform: rotate(360deg);
 }
-
-#lista2 li:before {
-  content: counter(li);
+.contador{
   counter-increment: li;
+}
+.lista li:before {
+  content: counter(li) ;
   position: absolute;
   left: -1.3em;
   top: 50%;
   margin-top: -1.3em;
-  background: #003380ff;
+  background: var(--color-oscuro);
   height: 2em;
   width: 2em;
   line-height: 2em;
@@ -156,6 +158,34 @@ nav {
   font-weight: bold;
   border-radius: 2em;
   transition: all 0.3s ease-out;
+}
+
+#elementos:before {
+  content: "";
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: var(--color-primario);
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: 0.3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all 0.3s ease-out;
+}
+#aclaracion:before{
+  content: "";
+  background: transparent;
+  border: 0;
+
+}
+#aclaracion{
+  background: rgb(172, 0, 0);
+  width: 50%;
+  margin: auto;
 }
 /*Footer*/
 footer{
@@ -236,6 +266,13 @@ footer span{
   .hero-titulo span {
     margin-left: 0;
     font-size: 1rem;
+  }
+  /*Propuestas*/
+  .propuestas-cont{
+    margin: 1rem .5rem;
+  }
+  #aclaracion{
+    width: 90%;
   }
 }
 
