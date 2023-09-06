@@ -96,7 +96,7 @@ nav {
   font-size: 2em;
   color: var(--color-primario);
 }
-/*Quienes somos*/
+/*Quiénes somos*/
 
 .cargos-tabla table{
   width: 100%;
@@ -215,6 +215,24 @@ footer span{
   font-size: 70%;
   
 }
+.link-footer{
+  width: max-content;
+  text-decoration: none;
+  display: block;
+}
+.footer-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-cont div{
+  margin: 0;
+}
+
+footer img{
+  border-radius: 1rem;
+  width: 5rem;
+  margin-left: 1rem;
+}
 
 /*------------------------------------------------------------Media Query-------------------------------------------------------------*/
 @media (max-width: 1024px) {
@@ -261,6 +279,7 @@ footer span{
   .cargos-tabla h2{
     margin-left: 2rem;
   }
+
 }
 
 @media (max-width: 425px) {
@@ -279,5 +298,13 @@ footer span{
   #aclaracion{
     width: 100%;
   }
+    /*Footer*/
+    .footer-cont{
+      flex-direction: column;
+    }
+    .footer-cont img{
+      margin-top: 1rem;
+      width: 5rem;
+    }
 }
 
