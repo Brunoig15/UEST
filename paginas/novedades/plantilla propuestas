@@ -77,31 +77,15 @@
       <br />
       <br />
       <div class="contenedor">
-        <h2>Comienzo de creación de la mesa para los televisores</h2>
+        <h2><!--Titulo--></h2>
         <p>
-          Comenzamos con la fabricación de mesas móviles con ruedas para
-          facilitar el desplazamiento de los televisores.
+          <!--Intro-->
         </p>
-        <p>Reciclamos las ruedas de una camilla que estaba almacenada en el SUM para incorporarlas en nuestro proyecto. </p>
         <div class="cont-img">
           <img
-            src="/img/Novedades/Comienzo de creacion mesa para televisores/Foto1.jfif"
+            src=""
             alt=""
           />
-        </div>
-        <div class="cont-img">
-          <img
-            src="/img/Novedades/Comienzo de creacion mesa para televisores/Foto2.jfif"
-            alt=""
-          />
-        </div>
-        <p>Hicimos uso de las rejas ubicadas en la parte exterior del colegio para recopilar materiales  para nuestro proyecto.</p>
-        <div class="cont-img">
-            <img src="/img/Novedades/Comienzo de creacion mesa para televisores/Foto3.jfif"alt="" /> 
-        </div>
-
-        <div class="cont-img">
-            <img src="/img/Novedades/Comienzo de creacion mesa para televisores/Foto4.jfif"alt="" /> 
         </div>
     </section>
     <footer>
