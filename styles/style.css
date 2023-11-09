@@ -184,7 +184,9 @@ nav {
   width: 50%;
   margin: auto;
 }
-
+.lista .completo{
+  background-color: green;
+}
 /*Novedades*/
 .articulo{
   display: flex;
